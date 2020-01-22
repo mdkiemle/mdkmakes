@@ -1,0 +1,6 @@
+.header {
+    background-color: darkorange;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+}
