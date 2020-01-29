@@ -1,12 +1,13 @@
 import React from 'react';
 import classes from './Header.module.css';
+import NavItems from '../NavItems/NavItems';
 
 const header = (props) => (
     <header className={classes.header}>
-        <ul>
-            <li>test</li>
-            <li>test</li>
-        </ul>
+        <div>
+            Placeholder
+        </div>
+        <NavItems />
     </header>
 )
 
