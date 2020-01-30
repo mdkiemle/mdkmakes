@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Layout from './hoc/Layout/Layout';
+import Projects from './containers/Projects/Projects';
 
 function App() {
   return (
     <div>
       <Layout>
-        Hi!
+        <Projects/>
       </Layout>
     </div>
   );
