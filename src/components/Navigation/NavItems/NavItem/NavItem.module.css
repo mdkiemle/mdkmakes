@@ -1,11 +1,23 @@
 .navItem {
-    background-color: red;
     display: block;
     height: 100%;
     padding: 0 1rem;
+    cursor: pointer;
+    transition: all .25s;
+    border-radius: 20px;
 }
 
-.navItem a {
+.navItem:hover {
+    background-color: #1b1919;
+}
+
+.navItem p {
+    font-size: 2rem;
+    color: #e76114;
+}
+
+
+/* .navItem a {
     text-decoration: none;
     height: 100%;
     display: block;
@@ -14,4 +26,4 @@
 .navItem a:active {
     background-color: white;
     color: white;
-}
+} */

@@ -1,0 +1,32 @@
+.ProjCard {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    width: 60vw;
+    height: 30rem;
+    max-width: 70%;
+    box-shadow: 2px 2px 5px grey;
+    transition: all .33s ease-in;
+    animation-name: show;
+    animation-duration: 1s;
+}
+.Show {
+    color: blue;
+}
+.Flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Flex div {
+    text-align: center;
+    width: 50%;
+}
+
+.Flex div > div {
+    margin: auto;
+}
+@keyframes show {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}

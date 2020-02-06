@@ -1,3 +1,10 @@
 .Projects h2 {
     text-align: center;
 }
+.Flex {
+    display: flex;
+}
+.Arrows {
+    flex-direction: column;
+    width: 100%;
+}

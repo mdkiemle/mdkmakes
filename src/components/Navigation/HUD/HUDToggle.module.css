@@ -1,0 +1,51 @@
+.HUDToggle {
+    margin-top: .2rem;
+    margin-left: 1rem;
+    height: 30px;
+    background-color: #1b1919;
+    border-radius: 100px;
+    width: 30px;
+    border: 1px solid #e76114;
+    transition: all .25s;
+    position: fixed;
+    padding: 3px;
+    top: 0;
+    left: 1rem;
+    z-index: 101;
+    cursor: pointer;
+}
+.HUDToggle div {
+    width: 18px;
+    height: 3px;
+    background-color: #e76114;
+    margin: 5px 0;
+    transform: translateX(6px);
+    border-radius: 0;
+    transition: all .25s;
+}
+
+.HUDToggle:hover{
+    /* border: 0; */
+    box-shadow: 3px 3px 6px grey;
+    transform: translateX(-2px) translateY(-2px);
+}
+/* header {
+    background-color: darkorange;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+} */
+.crossLeft {
+    transform: rotateZ(45deg) translate(10px, 2px)!important;
+    transition: all .25s;
+}
+.crossRight {
+    transform: rotateZ(-45deg) translate(4px, 4px)!important;
+    transition: all .25s;
+}

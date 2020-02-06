@@ -1,15 +1,20 @@
 import React from 'react';
-import Aux from '../../hoc/Auxiliary/Auxiliary';
-import ProjCard  from './ProjCard/ProjCard';
 import classes from './Project.module.css';
-const project = (props) => {
 
+
+const project = (props) => {
+    let style = [classes.Project]
+    if (props.show) {
+        style.push(classes.Hide);
+    }
     return (
-        <div className={classes.Project}>
-            <div className={classes.ProjectWrap}>
-                {props.projectName} 
+       
+        <div className={classes.Flex}>
+            <div className={style.join(' ')}>
+                <div onClick={() => props.clicked(props.projectName)} className={classes.ProjectWrap}>
+                    {props.projectName}
+                </div>
             </div>
-                <ProjCard description={props.description} status={props.status} uses={props.utilizes}/>
         </div>
     )
 }

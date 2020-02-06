@@ -1,0 +1,38 @@
+.MainHUD {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all .1s; 
+    padding: 10rem;
+    box-sizing: border-box;
+}
+.MainHUD h1 {
+    text-align: center;
+    color: #e76114;
+}
+.show {
+    display: block;
+    animation-name: showing;
+    animation-duration: .25s;
+
+}
+
+.hide {
+    display: none;
+    animation-name: hiding;
+    animation-duration: .25s;
+}
+
+@keyframes showing {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes hiding {
+    from {opacity: 1}
+    to {opacity: 0}
+}

@@ -1,0 +1,19 @@
+.Footer {
+    background-color: #1b1919;
+    color: #e76114;
+    min-height: 20rem;
+    width: 100%;
+    position: absolute;
+    bottom: .5rem;
+    box-sizing: border-box;
+    display: block;
+    border-top: 2px solid #e76114;
+    border-bottom: 2px solid #e76114;
+}
+
+.Footer div {
+    padding: 1rem;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}

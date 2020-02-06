@@ -1,14 +1,26 @@
-import React from 'react';
+import React, {Component} from 'react';
 import classes from './Header.module.css';
-import NavItems from '../NavItems/NavItems';
+import HUD from '../HUD/HUDToggle';
 
-const header = (props) => (
-    <header className={classes.header}>
-        <div>
-            Placeholder
-        </div>
-        <NavItems />
-    </header>
-)
+class Header extends Component {
 
-export default header;
+    state = {
+        showHUD: false
+    }
+    
+    handleHudToggle = () => {
+        this.setState((prevState) =>{ 
+            return {showHUD: !prevState.showHUD}
+        });
+    }
+    render() {
+       
+        return (
+            <header className={classes.header}>
+                <HUD click={this.handleHudToggle} show={this.state.showHUD}/>
+            </header>
+        )
+    }
+}
+
+export default Header;

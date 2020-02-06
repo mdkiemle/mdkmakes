@@ -1,17 +1,43 @@
+.Flex {
+    display: flex;
+    width: 100%;
+}
+
 .Project {
     filter: drop-shadow(1px 6px 3px rgb(50, 50, 0, .5));
-    display: flex;
+    transition: all .33s;
+    width: 80%;
 }
 .Project h2 {
     text-align: center;
 }
 .ProjectWrap {
-    background-color: #fa9700;
+    background-color: #e76114;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 2rem;
     clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);
     margin: 2rem 0 2rem 2rem;
     min-height: 10rem;
     min-width: 20rem;
+    width: 80%;
+    cursor: pointer;
+    transition: all .33s;
+}
+
+.Project:hover {
+    filter: drop-shadow(-2px 12px 3px rgb(50, 50, 0, .5));
+}
+.ProjectWrap:hover {
+    transform: translateX(5px) translateY(-5px);
+}
+
+.Hide {
+    width: 100%;
+    transition: all .5s;
+}
+
+.ProjectWrap .Hide {
+    background-color: red;
 }

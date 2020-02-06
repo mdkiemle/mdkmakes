@@ -1,0 +1,51 @@
+.NavDropdownContainer {
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.NavDropdownContainer:hover {
+    border-radius: 20px;
+    background-color: #1b1919;
+    transition: background-color .25s;
+}
+
+
+.NavDropdown {
+    color: #e76114;
+    font-size: 2rem;
+    display: block;
+    padding: 0 1rem;
+}
+.NavDropdown:hover {
+    background-color: #1b1919;
+}
+.dropdownContent {
+    display: none;
+    transition: all .25s;
+}
+
+.NavDropdownContainer:hover .dropdownContent {
+    display: block;
+    position: absolute;
+    height: auto;
+    transition: all .25s;
+}
+
+.NavDropdownContainer:hover .arrowRight {
+    transform:  rotate(90deg);
+}
+
+.NavDropdownContainer:hover .dropdownContent li {
+    padding-left: 0;
+}
+
+.arrowRight {
+    width: 0;
+    height: 0;
+    border-top: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    border-left: .5rem solid #e76114;
+    display: inline-block;
+    transition: all .25s;
+
+}
